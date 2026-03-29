@@ -1,6 +1,5 @@
-import React from "react"
-import Card from "./Components/card"
-
+import React from "react";
+import Card from "./Components/card";
 
 const jobs = [
   {
@@ -9,7 +8,7 @@ const jobs = [
     type: "Part-Time",
     level: "Senior Level",
     salary: "$120/hr",
-    location: "Mumbai, India"
+    location: "Mumbai, India",
   },
   {
     company: "Google",
@@ -17,22 +16,18 @@ const jobs = [
     type: "Part-Time",
     schedule: "Flexible Schedule",
     salary: "$150–220k",
-    location: "Kochi, India"
+    location: "Kochi, India",
   },
-
 ];
-function App() {
-  
 
+const App = () => {
   return (
-   
     <div className="job-grid">
-    
-    {jobs.map((job, idx) => (
-      <Card key={idx} job={job} />
-    ))}
-  </div>
-  )
-}
+      {jobs.map((job, idx) => (
+        <Card key={idx} job={job} />
+      ))}
+    </div>
+  );
+};
 
-export default App
+export default App;
