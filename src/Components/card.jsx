@@ -1,15 +1,15 @@
 import React from "react";
 import App from "../App";
 
-const Card = (job) => {
+const Card = ({ job }) => {
       return (
        
-    <div className="job-card" key={key}>
+    <div className="job-card" >
     <h3>{job.company}</h3>
-    <p class="title">{job.title}</p>
-    <p class="details">{job.type} | {job.level}</p>
-    <p class="salary">{job.salary}</p>
-    <p class="location">{job.location}</p>
+    <p className="title">{job.title}</p>
+    <p className="details">{job.type} | {job.level}</p>
+    <p className="salary">{job.salary}</p>
+    <p className="location">{job.location}</p>
     <button>Apply now</button>
   </div>
   )

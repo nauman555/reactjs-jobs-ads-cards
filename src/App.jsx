@@ -26,9 +26,10 @@ function App() {
 
   return (
    
-    <div class="job-grid">
-    {jobs.map((job, index) => (
-      <Card key={index} job={job} />
+    <div className="job-grid">
+    
+    {jobs.map((job, idx) => (
+      <Card key={idx} job={job} />
     ))}
   </div>
   )
